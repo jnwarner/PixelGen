@@ -23,11 +23,6 @@ public class Main {
 
         File file = new File("pass.txt");
         try {
-            file.createNewFile();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-        try {
             PrintWriter writer = new PrintWriter(file);
             writer.println(Arrays.toString(result));
             writer.close();
